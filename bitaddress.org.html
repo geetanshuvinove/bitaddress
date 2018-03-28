@@ -5142,7 +5142,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 					<!--chars.unshift(B58.alphabet[0]);-->
 				<!--} else break;-->
 			<!--}-->
-			 // 3D Coin Provate Key //
+			 // 3D Coin Private Key //
 			 chars[0]="C"
 
 			return chars.join('');
@@ -5744,7 +5744,9 @@ Bitcoin.ECKey = (function () {
 		var hash = this.getPubKeyHash();
 		var addr = new Bitcoin.Address(hash);
 		<!--return addr.toString();-->
-		// converting in 3d public key
+
+		// 3D Coin Public Key //
+
 		addr = addr.toString()
 		addr = addr.split("")
 		addr[0]="A"
